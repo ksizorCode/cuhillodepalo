@@ -16,9 +16,14 @@ document.addEventListener('DOMContentLoaded', () => {
       }
       
       // Nombre, descripción y tipo
-      miHTML += `<h2>${lugar.nombre}</h2>
+      miHTML += `<div class="info">
+
+        <h2>${lugar.nombre}</h2>
+        <div class="cosa">
         <p>${lugar.descripcion}</p>
-        <p>Tipo: ${lugar.tipo}</p>`;
+        <p class="tipo">${lugar.tipo}</p>
+        </div>
+        </div>`;
       
       // Cierre del <li>
       miHTML += `</li>`;
