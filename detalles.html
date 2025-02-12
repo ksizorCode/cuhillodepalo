@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Detalles del Restaurante</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 1rem;
+      background-color: #f5f5f5;
+    }
+    .detail-container {
+      max-width: 600px;
+      margin: 0 auto;
+      background-color: #fff;
+      padding: 1rem;
+      border-radius: 5px;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+    }
+    .detail-container img {
+      width: 100%;
+      border-radius: 5px;
+      margin-bottom: 1rem;
+    }
+  </style>
+</head>
+<body>
+  <div class="detail-container" id="detailContainer">
+    <!-- La información del restaurante se insertará aquí -->
+  </div>
+
+  <script>
+    // Función para extraer el parámetro "id" de la URL
+    function getQueryParam(param) {
+      const urlParams = new URLSearchParams(window.location.search);
+      return urlParams.get(param);
+    }
+
+    const restaurantId = getQueryParam('id');
+    const container = document.getElementById('detailContainer');
+
+    if (restaurantId) {
+      // Carga el JSON y filtra el restaurante con el id indicado
+      fetch('lugares.json')
+        .then(response => response.json())
+        .then(data => {
+          const restaurantData = data.lugares.find(lugar => lugar.id === restaurantId);
+          if (restaurantData) {
+            let html = '';
+            if (restaurantData.imagen) {
+              html += `<img src="${restaurantData.imagen}" alt="${restaurantData.nombre}">`;
+            }
+            html += `<h1>${restaurantData.nombre}</h1>`;
+            html += `<p>${restaurantData.descripcion}</p>`;
+            html += `<p><strong>Tipo:</strong> ${restaurantData.tipo}</p>`;
+            container.innerHTML = html;
+          } else {
+            container.innerHTML = '<p>No se encontró información del restaurante.</p>';
+          }
+        })
+        .catch(error => {
+          console.error('Error al cargar el JSON:', error);
+          container.innerHTML = '<p>Error al cargar la información.</p>';
+        });
+    } else {
+      container.innerHTML = '<p>ID de restaurante no especificado.</p>';
+    }
+  </script>
+</body>
+</html>

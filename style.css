@@ -3,12 +3,26 @@
   --c2:white;
 }
 
+
+
+
 /* Reset básico */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
+
+
+/* Aplica a html y body para evitar zoom en toda la página */
+html, body {
+  -ms-touch-action: manipulation; /* Para IE/Edge */
+  touch-action: manipulation;
+  overflow-x: hidden;
+  width: 100%;
+}
+
+
 
 /* Estilos generales del body */
 body {

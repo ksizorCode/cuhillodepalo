@@ -59,34 +59,7 @@
     }
         */
   </script>
-
-  <script>
-    document.addEventListener('DOMContentLoaded', () => {
-  const gridViewBtn = document.getElementById('gridView');
-  const listViewBtn = document.getElementById('listView');
-  const restaurantGrid = document.getElementById('restaurant-grid');
-
-  // Función para activar grid view
-  function setGridView() {
-    restaurantGrid.classList.remove('list-view');
-    gridViewBtn.classList.add('active');
-    listViewBtn.classList.remove('active');
-  }
-
-  // Función para activar list view
-  function setListView() {
-    restaurantGrid.classList.add('list-view');
-    listViewBtn.classList.add('active');
-    gridViewBtn.classList.remove('active');
-  }
-
-  // Asigna los event listeners a los botones
-  gridViewBtn.addEventListener('click', setGridView);
-  listViewBtn.addEventListener('click', setListView);
-
-  // Aquí iría el resto de tu código para cargar y renderizar las tarjetas...
-});
-  </script>
+  
 </body>
 </html>
 
