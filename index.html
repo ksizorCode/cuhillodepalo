@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Gastronomía Local</title>
+  
+  <!-- Manifest para PWA -->
+  <link rel="manifest" href="manifest.json">
+  
+  <!-- Ícono de la app -->
+  <link rel="icon" href="img/icon-192x192.png">
+  
+  <!-- Hoja de estilos -->
+  <link rel="stylesheet" href="style.css">
+  
+  <!-- Librería Masonry (CDN) -->
+  <script src="https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js"></script>
+</head>
+<body>
+  <header>
+    <h1>Gastronomía Local</h1>
+    <div class="filter-container">
+      <!-- Campo de búsqueda -->
+      <input type="text" id="search" placeholder="Buscar...">
+      <!-- Filtro por tipo -->
+      <select id="filter">
+        <option value="todos">Todos</option>
+        <option value="restaurante">Restaurante</option>
+        <option value="sidrería">Sidrería</option>
+        <option value="pastelería">Pastelería</option>
+        <option value="pasta">Lugar de Pasta</option>
+        <option value="sitio">Sitio Gastronómico</option>
+      </select>
+    </div>
+  </header>
+  
+  <main>
+    <!-- Contenedor para las tarjetas -->
+    <div class="grid" id="restaurant-grid">
+      <!-- Elemento de referencia para Masonry (no muestra contenido) -->
+      <div class="grid-sizer"></div>
+    </div>
+  </main>
+  
+  <!-- Script principal -->
+  <script src="script.js"></script>
+  
+  <!-- Registro del Service Worker -->
+  <script>
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('service-worker.js')
+        .then(registration => console.log('Service Worker registrado con éxito', registration))
+        .catch(error => console.error('Error registrando el Service Worker', error));
+    }
+  </script>
+</body>
+</html>

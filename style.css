@@ -1,0 +1,70 @@
+/* Estilos generales */
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+header {
+  background-color: #ff5722;
+  color: #fff;
+  padding: 1rem;
+  text-align: center;
+}
+
+.filter-container {
+  margin-top: 1rem;
+}
+
+.filter-container input,
+.filter-container select {
+  padding: 0.5rem;
+  margin: 0.5rem;
+  border-radius: 5px;
+  border: none;
+}
+
+main {
+  padding: 1rem;
+}
+
+/* Contenedor para Masonry */
+.grid {
+  margin: 0 auto;
+}
+
+/* Tarjeta de lugar gastronómico */
+.restaurant-card {
+  background-color: #fff;
+  border-radius: 5px;
+  margin: 10px;
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+.restaurant-card img {
+  aspect-ratio:1/1;
+  object-fit:cover;
+  border-radius:8px;
+}
+
+/* Elemento de referencia para Masonry (sin contenido visible) */
+.grid-sizer,
+.restaurant-card {
+  width: 30%;
+}
+
+/* Responsividad */
+@media (max-width: 768px) {
+  .grid-sizer,
+  .restaurant-card {
+    width: 45%;
+  }
+}
+
+@media (max-width: 480px) {
+  .grid-sizer,
+  .restaurant-card {
+    width: 100%;
+  }
+}
