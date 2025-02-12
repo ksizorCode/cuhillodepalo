@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', () => {
     const grid = document.getElementById('restaurant-grid');
     const searchInput = document.getElementById('search');
     const filterSelect = document.getElementById('filter');
-    const initialSampleCount = 4; // Número de elementos a mostrar en la vista inicial
+    const initialSampleCount = 20; // Número de elementos a mostrar en la vista inicial
   
     // Función para crear una "card" a partir de un objeto "lugar" en un <li>
     function createCard(lugar) {
@@ -62,7 +62,7 @@ document.addEventListener('DOMContentLoaded', () => {
     }
   
     // Carga los datos desde el archivo JSON
-    fetch('lugares.json')
+    fetch('restaurantes.json')
       .then(response => response.json())
       .then(data => {
         dataLugares = data.lugares; // Se asume que el JSON tiene una propiedad "lugares"

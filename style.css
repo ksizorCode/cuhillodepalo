@@ -20,6 +20,28 @@ header {
   text-align: center;
 }
 
+/* Contenedor para botones de vista */
+.view-toggle {
+  margin: 1rem 0;
+}
+
+.view-toggle button {
+  padding: 0.5rem 1rem;
+  margin: 0 0.5rem;
+  border: none;
+  border-radius: 5px;
+  background-color: #fff;
+  color: #ff5722;
+  cursor: pointer;
+  font-size: 1rem;
+  transition: background-color 0.3s, color 0.3s;
+}
+
+.view-toggle button.active {
+  background-color: #ff5722;
+  color: #fff;
+}
+
 /* Contenedor de filtros */
 .filter-container {
   margin-top: 1rem;
@@ -48,30 +70,29 @@ main {
   justify-content: center;
 }
 
-/* Tarjeta (cada <li> de la lista) */
+/* --- Estilos para vista en retícula (grid view) --- */
+
+/* Tarjeta (cada <li> de la lista) en grid view */
 .restaurant-card {
   background-color: #fff;
   border-radius: 5px;
   padding: 1rem;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   
-  /* Flexbox para distribuir el contenido internamente */
+  /* Distribución interna */
   display: flex;
   flex-direction: column;
   align-items: center;
   text-align: center;
   
   /* Tamaño base para 4 columnas en pantallas grandes */
-  flex: 1 1 calc(25% - 10px);
-  max-width: calc(25% - 10px);
+  flex: 1 1 calc(15% - 10px);
+  max-width: calc(15% - 10px);
 }
 
-.restaurant-card img{
-  aspect-ratio:1/1;
-}
-
-/* Estilo de las imágenes dentro de la tarjeta */
+/* Imagen dentro de la tarjeta en grid view */
 .restaurant-card img {
+  aspect-ratio: 1/1;
   border-radius: 5px;
   width: 100%;
   height: auto;
@@ -101,4 +122,40 @@ main {
     flex: 1 1 100%;
     max-width: 100%;
   }
+}
+
+/* --- Estilos para vista de lista --- */
+/* Cuando el contenedor #restaurant-grid tenga la clase "list-view", se muestran los items en lista */
+#restaurant-grid.list-view {
+  flex-direction: column;
+  align-items: stretch;
+  justify-content: flex-start;
+}
+
+#restaurant-grid.list-view .restaurant-card {
+  /* Cada tarjeta ocupará el 100% del ancho */
+  flex: 1 1 100%;
+  max-width: 100%;
+  
+  /* Cambiamos la disposición interna a fila */
+  flex-direction: row;
+  align-items: center;
+  text-align: left;
+  
+  /* Puedes ajustar el padding si lo deseas */
+  padding: 1rem;
+}
+
+#restaurant-grid.list-view .restaurant-card img {
+  /* Establece un ancho fijo para la imagen en lista */
+  width: 150px;
+  height: 150px;
+  margin-right: 1rem;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+/* Opcional: Ajuste de márgenes para los títulos en vista de lista */
+#restaurant-grid.list-view .restaurant-card h2 {
+  margin-bottom: 0.5rem;
 }

@@ -32,6 +32,10 @@
         <option value="pasta">Lugar de Pasta</option>
         <option value="sitio">Sitio Gastronómico</option>
       </select>
+      <div class="view-toggle">
+        <button id="gridView" class="active">Vista Retícula</button>
+        <button id="listView">Vista Lista</button>
+      </div>
     </div>
   </header>
   
@@ -47,11 +51,46 @@
   
   <!-- Registro del Service Worker -->
   <script>
+    /*
     if ('serviceWorker' in navigator) {
       navigator.serviceWorker.register('service-worker.js')
         .then(registration => console.log('Service Worker registrado con éxito', registration))
         .catch(error => console.error('Error registrando el Service Worker', error));
     }
+        */
+  </script>
+
+  <script>
+    document.addEventListener('DOMContentLoaded', () => {
+  const gridViewBtn = document.getElementById('gridView');
+  const listViewBtn = document.getElementById('listView');
+  const restaurantGrid = document.getElementById('restaurant-grid');
+
+  // Función para activar grid view
+  function setGridView() {
+    restaurantGrid.classList.remove('list-view');
+    gridViewBtn.classList.add('active');
+    listViewBtn.classList.remove('active');
+  }
+
+  // Función para activar list view
+  function setListView() {
+    restaurantGrid.classList.add('list-view');
+    listViewBtn.classList.add('active');
+    gridViewBtn.classList.remove('active');
+  }
+
+  // Asigna los event listeners a los botones
+  gridViewBtn.addEventListener('click', setGridView);
+  listViewBtn.addEventListener('click', setListView);
+
+  // Aquí iría el resto de tu código para cargar y renderizar las tarjetas...
+});
   </script>
 </body>
 </html>
+
+
+
+
+
