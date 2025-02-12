@@ -95,14 +95,14 @@ header {
 
 /* Main */
 main {
-  padding: 1rem;
+  padding: 0.5rem;
 }
 
 /* Contenedor de la lista de tarjetas */
 #restaurant-grid {
   display: flex;
   flex-wrap: wrap;
-  gap: 10px;
+  gap: 5px;
   list-style: none;
   padding: 0;
   justify-content: center;
@@ -131,6 +131,10 @@ main {
   max-width: calc(15% - 10px);
 }
 
+
+.restaurant-card .info{
+  padding:0 10px;
+}
 /* Imagen dentro de la tarjeta en grid view */
 .restaurant-card img {
   aspect-ratio: 1/1;
@@ -160,7 +164,7 @@ main {
 /* Responsive: 1 columna para móviles */
 @media (max-width: 480px) {
   .restaurant-card {
-    flex: 1 1 100%;
+    flex: 1 1 186px;
     max-width: 100%;
   }
 }
@@ -207,3 +211,11 @@ main {
 }
 
 .tipo{color:var(--c1)}
+
+
+footer{
+  background-color: var(--c1);
+  color:white;
+  padding: 20px;
+  text-align: center;
+}
