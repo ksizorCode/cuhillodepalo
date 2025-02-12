@@ -1,0 +1,124 @@
+{
+  "lugares": [
+    {
+      "nombre": "La Buena Mesa",
+      "descripcion": "Deliciosa comida tradicional.",
+      "imagen": "img/restaurante1.jpg",
+      "tipo": "restaurante"
+    },
+    {
+      "nombre": "Sidra Real",
+      "descripcion": "La mejor sidra artesanal de la zona.",
+      "imagen": "img/sidreria.jpg",
+      "tipo": "sidrería"
+    },
+    {
+      "nombre": "Dulce Tentación",
+      "descripcion": "Pastelería con postres irresistibles.",
+      "imagen": "img/pasteleria.jpg",
+      "tipo": "pastelería"
+    },
+    {
+      "nombre": "Pasta & Amor",
+      "descripcion": "El lugar perfecto para los amantes de la pasta.",
+      "imagen": "img/pasta.jpg",
+      "tipo": "pasta"
+    },
+    {
+      "nombre": "Gastro Tour",
+      "descripcion": "Descubre los mejores sitios gastronómicos de la ciudad.",
+      "imagen": "img/sitiogas.jpg",
+      "tipo": "sitio"
+    },
+    {
+      "nombre": "El Rincón del Sabor",
+      "descripcion": "Innovación y tradición en cada plato.",
+      "imagen": "img/restaurante2.jpg",
+      "tipo": "restaurante"
+    },
+    {
+      "nombre": "Sabores del Mar",
+      "descripcion": "Especializado en pescados y mariscos frescos.",
+      "imagen": "img/restaurante3.jpg",
+      "tipo": "restaurante"
+    },
+    {
+      "nombre": "La Sidrería Moderna",
+      "descripcion": "Variedad de sidras y tapas típicas.",
+      "imagen": "img/sidreria2.jpg",
+      "tipo": "sidrería"
+    },
+    {
+      "nombre": "Dulces Encantos",
+      "descripcion": "Deliciosos pasteles y dulces artesanales.",
+      "imagen": "img/pasteleria2.jpg",
+      "tipo": "pastelería"
+    },
+    {
+      "nombre": "Pasta Fresca",
+      "descripcion": "Auténticas recetas italianas en cada bocado.",
+      "imagen": "img/pasta2.jpg",
+      "tipo": "pasta"
+    },
+    {
+      "nombre": "Sabor y Tradición",
+      "descripcion": "Restaurante de cocina local con un toque moderno.",
+      "imagen": "img/restaurante4.jpg",
+      "tipo": "restaurante"
+    },
+    {
+      "nombre": "La Cava de la Sidra",
+      "descripcion": "Experiencia enológica y sidrera en un ambiente único.",
+      "imagen": "img/sidreria3.jpg",
+      "tipo": "sidrería"
+    },
+    {
+      "nombre": "Pastelería La Delicia",
+      "descripcion": "Postres y repostería de alta calidad.",
+      "imagen": "img/pasteleria3.jpg",
+      "tipo": "pastelería"
+    },
+    {
+      "nombre": "La Pasta de la Nonna",
+      "descripcion": "Sabores auténticos de la cocina italiana tradicional.",
+      "imagen": "img/pasta3.jpg",
+      "tipo": "pasta"
+    },
+    {
+      "nombre": "El Sabor del Valle",
+      "descripcion": "Restaurante rural con ingredientes de la huerta.",
+      "imagen": "img/restaurante5.jpg",
+      "tipo": "restaurante"
+    },
+    {
+      "nombre": "Sidra & Tapas",
+      "descripcion": "Combinación perfecta de sidra y tapas variadas.",
+      "imagen": "img/sidreria4.jpg",
+      "tipo": "sidrería"
+    },
+    {
+      "nombre": "Pastelería El Capricho",
+      "descripcion": "Dulces para consentir tu paladar.",
+      "imagen": "img/pasteleria4.jpg",
+      "tipo": "pastelería"
+    },
+    {
+      "nombre": "La Pasta Fresca",
+      "descripcion": "Pasta hecha a mano con recetas tradicionales.",
+      "imagen": "img/pasta4.jpg",
+      "tipo": "pasta"
+    },
+    {
+      "nombre": "Ruta Gastronómica",
+      "descripcion": "Descubre los sabores más auténticos de la ciudad.",
+      "imagen": "img/sitiogas2.jpg",
+      "tipo": "sitio"
+    },
+    {
+      "nombre": "El Gourmet Urbano",
+      "descripcion": "Fusión de cocina internacional con toques locales.",
+      "imagen": "img/restaurante6.jpg",
+      "tipo": "restaurante"
+    }
+  ]
+}
