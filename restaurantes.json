@@ -1,124 +1,184 @@
 {
   "lugares": [
     {
+      "id": "1",
       "nombre": "La Buena Mesa",
       "descripcion": "Deliciosa comida tradicional.",
       "imagen": "img/restaurante1.jpg",
-      "tipo": "restaurante"
+      "tipo": "restaurante",
+      "direccion": "Calle de la Tradición, 123",
+      "telefono": "123456789"
     },
     {
+      "id": "2",
       "nombre": "Sidra Real",
       "descripcion": "La mejor sidra artesanal de la zona.",
       "imagen": "img/sidreria.jpg",
-      "tipo": "sidrería"
+      "tipo": "sidrería",
+      "direccion": "Avenida de la Sidra, 456",
+      "telefono": "987654321"
     },
     {
+      "id": "3",
       "nombre": "Dulce Tentación",
       "descripcion": "Pastelería con postres irresistibles.",
       "imagen": "img/pasteleria.jpg",
-      "tipo": "pastelería"
+      "tipo": "pastelería",
+      "direccion": "Plaza de los Dulces, 789",
+      "telefono": "555123456"
     },
     {
+      "id": "4",
       "nombre": "Pasta & Amor",
       "descripcion": "El lugar perfecto para los amantes de la pasta.",
       "imagen": "img/pasta.jpg",
-      "tipo": "pasta"
+      "tipo": "pasta",
+      "direccion": "Calle de la Pasta, 101",
+      "telefono": "444555666"
     },
     {
+      "id": "5",
       "nombre": "Gastro Tour",
       "descripcion": "Descubre los mejores sitios gastronómicos de la ciudad.",
       "imagen": "img/sitiogas.jpg",
-      "tipo": "sitio"
+      "tipo": "sitio",
+      "direccion": "Ruta Gastronómica, 202",
+      "telefono": "333222111"
     },
     {
+      "id": "6",
       "nombre": "El Rincón del Sabor",
       "descripcion": "Innovación y tradición en cada plato.",
       "imagen": "img/restaurante2.jpg",
-      "tipo": "restaurante"
+      "tipo": "restaurante",
+      "direccion": "Calle del Sabor, 303",
+      "telefono": "111222333"
     },
     {
+      "id": "7",
       "nombre": "Sabores del Mar",
       "descripcion": "Especializado en pescados y mariscos frescos.",
       "imagen": "img/restaurante3.jpg",
-      "tipo": "restaurante"
+      "tipo": "restaurante",
+      "direccion": "Malecón del Mar, 404",
+      "telefono": "222333444"
     },
     {
+      "id": "8",
       "nombre": "La Sidrería Moderna",
       "descripcion": "Variedad de sidras y tapas típicas.",
       "imagen": "img/sidreria2.jpg",
-      "tipo": "sidrería"
+      "tipo": "sidrería",
+      "direccion": "Calle Moderna, 505",
+      "telefono": "777888999"
     },
     {
+      "id": "9",
       "nombre": "Dulces Encantos",
       "descripcion": "Deliciosos pasteles y dulces artesanales.",
       "imagen": "img/pasteleria2.jpg",
-      "tipo": "pastelería"
+      "tipo": "pastelería",
+      "direccion": "Avenida de los Encantos, 606",
+      "telefono": "888777666"
     },
     {
+      "id": "10",
       "nombre": "Pasta Fresca",
       "descripcion": "Auténticas recetas italianas en cada bocado.",
       "imagen": "img/pasta2.jpg",
-      "tipo": "pasta"
+      "tipo": "pasta",
+      "direccion": "Calle Italiana, 707",
+      "telefono": "123123123"
     },
     {
+      "id": "11",
       "nombre": "Sabor y Tradición",
       "descripcion": "Restaurante de cocina local con un toque moderno.",
       "imagen": "img/restaurante4.jpg",
-      "tipo": "restaurante"
+      "tipo": "restaurante",
+      "direccion": "Plaza Tradicional, 808",
+      "telefono": "321321321"
     },
     {
+      "id": "12",
       "nombre": "La Cava de la Sidra",
       "descripcion": "Experiencia enológica y sidrera en un ambiente único.",
       "imagen": "img/sidreria3.jpg",
-      "tipo": "sidrería"
+      "tipo": "sidrería",
+      "direccion": "Bulevar de la Cava, 909",
+      "telefono": "456456456"
     },
     {
+      "id": "13",
       "nombre": "Pastelería La Delicia",
       "descripcion": "Postres y repostería de alta calidad.",
       "imagen": "img/pasteleria3.jpg",
-      "tipo": "pastelería"
+      "tipo": "pastelería",
+      "direccion": "Calle La Delicia, 111",
+      "telefono": "654654654"
     },
     {
+      "id": "14",
       "nombre": "La Pasta de la Nonna",
       "descripcion": "Sabores auténticos de la cocina italiana tradicional.",
       "imagen": "img/pasta3.jpg",
-      "tipo": "pasta"
+      "tipo": "pasta",
+      "direccion": "Via Nonna, 222",
+      "telefono": "987987987"
     },
     {
+      "id": "15",
       "nombre": "El Sabor del Valle",
       "descripcion": "Restaurante rural con ingredientes de la huerta.",
       "imagen": "img/restaurante5.jpg",
-      "tipo": "restaurante"
+      "tipo": "restaurante",
+      "direccion": "Camino del Valle, 333",
+      "telefono": "111333555"
     },
     {
+      "id": "16",
       "nombre": "Sidra & Tapas",
       "descripcion": "Combinación perfecta de sidra y tapas variadas.",
       "imagen": "img/sidreria4.jpg",
-      "tipo": "sidrería"
+      "tipo": "sidrería",
+      "direccion": "Avenida de Tapas, 444",
+      "telefono": "222444666"
     },
     {
+      "id": "17",
       "nombre": "Pastelería El Capricho",
       "descripcion": "Dulces para consentir tu paladar.",
       "imagen": "img/pasteleria4.jpg",
-      "tipo": "pastelería"
+      "tipo": "pastelería",
+      "direccion": "Calle del Capricho, 555",
+      "telefono": "333555777"
     },
     {
+      "id": "18",
       "nombre": "La Pasta Fresca",
       "descripcion": "Pasta hecha a mano con recetas tradicionales.",
       "imagen": "img/pasta4.jpg",
-      "tipo": "pasta"
+      "tipo": "pasta",
+      "direccion": "Calle Fresca, 666",
+      "telefono": "444666888"
     },
     {
+      "id": "19",
       "nombre": "Ruta Gastronómica",
       "descripcion": "Descubre los sabores más auténticos de la ciudad.",
       "imagen": "img/sitiogas2.jpg",
-      "tipo": "sitio"
+      "tipo": "sitio",
+      "direccion": "Ruta de Sabores, 777",
+      "telefono": "555777999"
     },
     {
+      "id": "20",
       "nombre": "El Gourmet Urbano",
       "descripcion": "Fusión de cocina internacional con toques locales.",
       "imagen": "img/restaurante6.jpg",
-      "tipo": "restaurante"
+      "tipo": "restaurante",
+      "direccion": "Calle Gourmet, 888",
+      "telefono": "666888000"
     }
   ]
 }

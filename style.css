@@ -11,6 +11,17 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  user-select: none;
+}
+
+::selection {
+  background: transparent;
+  color: inherit;
+}
+
+::-moz-selection { /* Para Firefox */
+  background: transparent;
+  color: inherit;
 }
 
 
@@ -21,6 +32,12 @@ html, body {
   overflow-x: hidden;
   width: 100%;
 }
+
+
+
+
+
+
 
 
 
@@ -44,7 +61,7 @@ header {
   margin: 1rem 0;
 }
 
-.view-toggle button {
+.view-toggle button, .btn {
   padding: 0.5rem 1rem;
   margin: 0 0.5rem;
   border: var(--c2) solid 1px;
@@ -54,6 +71,8 @@ header {
   cursor: pointer;
   font-size: 1rem;
   transition: background-color 0.3s, color 0.3s;
+  text-decoration: none;
+  display: inline-block;
 }
 
 .view-toggle button.active {
