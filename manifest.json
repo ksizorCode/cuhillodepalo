@@ -1,6 +1,8 @@
 {
   "short_name": "Cuchillín",
   "name": "Cuchillucu de palu",
+  "description": "Una aplicación web increíble para descubrir y disfrutar de la auténtica gastronomía local. ¡Vive la experiencia Cuchillucu de palu en tu dispositivo!",
+  "lang": "es-ES",
   "icons": [
     {
       "src": "img/icon-192x192.png",
@@ -11,10 +13,39 @@
       "src": "img/icon-512x512.png",
       "sizes": "512x512",
       "type": "image/png"
+    },
+    {
+      "src": "img/icon-512x512-maskable.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "maskable any"
     }
   ],
-  "start_url": "./index.html",
+  "start_url": "./index.html?utm_source=homescreen",
+  "scope": "./",
   "display": "standalone",
+  "orientation": "portrait",
   "background_color": "#ffffff",
-  "theme_color": "#FF5757"
+  "theme_color": "#FF5757",
+  "categories": [
+    "restaurant",
+    "food",
+    "lifestyle"
+  ],
+  "screenshots": [
+    {
+      "src": "img/screenshot1.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "label": "Pantalla de inicio"
+    },
+    {
+      "src": "img/screenshot2.png",
+      "sizes": "640x480",
+      "type": "image/png",
+      "label": "Vista de restaurante"
+    }
+  ],
+  "prefer_related_applications": false,
+  "related_applications": []
 }
